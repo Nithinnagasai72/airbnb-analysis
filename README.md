@@ -68,7 +68,7 @@ prices. The goal is to derive business insights that can help hosts optimize pri
 
 \## Dashboard Preview
 
-!\[Airbnb Dashboard](screenshots/dashboard.png)
+![Airbnb Dashboard](screenshots/dashboard.png)
 
 &#x20;
 
