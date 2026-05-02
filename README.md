@@ -58,5 +58,17 @@ ORDER BY avg\_price DESC;
 
 
 
+\## Project Overview
 
+This project analyses Airbnb listings data to uncover pricing patterns, availability trends, and key factors influencing listing
+
+prices. The goal is to derive business insights that can help hosts optimize pricing and improve occupancy.
+
+
+
+\## Dashboard Preview
+
+!\[Airbnb Dashboard](screenshots/dashboard.png)
+
+&#x20;
 
