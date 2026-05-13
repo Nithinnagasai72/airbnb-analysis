@@ -66,37 +66,7 @@ WHERE price > 500
 ORDER BY price DESC;
 
 
--- 9. Rank listings by price (Window Function)
-
-SELECT name, neighbourhood, price,
-RANK() OVER (ORDER BY price DESC) AS price_rank
-FROM airbnb_cleaned;
-
-
--- 10. Listings with low availability
-
-SELECT *
-FROM airbnb_cleaned
-WHERE availability_365 < 50;
-
-
--- 11. Average availability by neighbourhood
-
-SELECT neighbourhood, AVG(availability_365) AS avg_availability
-FROM airbnb_cleaned
-GROUP BY neighbourhood
-ORDER BY avg_availability DESC;
-
-
--- 12. Room type distribution
-
-SELECT room_type, COUNT(*) AS total_listings
-FROM airbnb_cleaned
-GROUP BY room_type
-ORDER BY total_listings DESC;
-
-
--- 13. Top 5 neighbourhoods with most listings
+-- 9. Top 5 neighbourhoods with most listings
 
 SELECT neighbourhood, COUNT(*) AS total_listings
 FROM airbnb_cleaned
@@ -105,7 +75,7 @@ ORDER BY total_listings DESC
 LIMIT 5;
 
 
--- 14. Listings with minimum nights > 30
+-- 10. Listings with minimum nights > 30
 
 SELECT *
 FROM airbnb_cleaned
@@ -113,7 +83,7 @@ WHERE minimum_nights > 30
 ORDER BY minimum_nights DESC;
 
 
--- 15. Average price per availability category
+-- 11. Average price per availability category
 
 SELECT 
     CASE 
